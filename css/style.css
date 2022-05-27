@@ -42,6 +42,7 @@ a{
     position: sticky;
     z-index: 100;
     background-color: #fff;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.2);
 }
 .expo_logo{
     width: 6rem;
@@ -275,7 +276,19 @@ img{
     flex-direction: column;
 }
 
-@media screen and (max-width:600px) {
+footer{
+    background-color: #103928;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+.footer_inner.flex{
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 120px;
+}
+
+@media screen and (max-width:700px) {
     .header{
         padding: 1rem 2rem;
     }
@@ -293,11 +306,63 @@ img{
         background-color: rgb(168, 167, 167);
     } */
 
-    .services_inner{
+    .services,
+    .showcase_text,
+    .showcase_image,
+    .choose_inner,
+    .step,
+    .stories{
         padding: 0 2rem;
     }
 
-    .services .grid-2{
+
+
+    .step_inner{
+        padding: 4rem 2rem ;
+        text-align: center;
+
+    }
+
+    .showcase_text{
+        margin-bottom: 5rem;
+    }
+
+    .showcase_text h2{
+        font-size: 2.5rem;
+    }
+
+    .showcase_image img{
+        width: 100%;
+    }
+    .stories h2{
+        font-size: 1.9rem;
+    }
+
+    .services .grid-2,
+    .showcase_inner.grid-2,
+    .choose .grid-2,
+    .stories_inner .grid-2{
         grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media screen and (min-width:800px) {
+    .nav,.navb{
+        display: none;
+    }
+
+    .header{
+        padding: 0 2rem;
+    }
+    
+    .showcase_inner,
+    .services_inner,
+    .expo,
+    .choose_inner,
+    .stories_inner,
+    .step{
+        padding: 0 2rem;
     }
 }

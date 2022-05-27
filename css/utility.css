@@ -14,6 +14,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-5{
+    grid-template-columns: repeat(4, 1fr);
+}
+
 section{
     margin: 6rem 0;
 }
@@ -25,6 +29,12 @@ section{
     font-size: 1.1rem;
     padding: 1rem 2.5rem;
     border-radius: 3rem;
+    transition: all 0.2s;
+}
+
+
+.btn:hover{
+    background-color:#058139;
 }
 .showcase{
    background-color: #103928;

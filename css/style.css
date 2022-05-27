@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header{
+    height: 5rem;
+    background-color: #4e4e34;
+}
+
+.header .flex{
+    justify-content: space-between;
+   
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.expo{
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 100;
+    background-color: #fff;
+}
+.expo_logo{
+    width: 6rem;
+}
+.expo_inner img{
+    width: 100%;
+}
+
+.nav_list{
+    list-style: none;
+}
+
+.nav_link{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.nav_link:hover{
+    color: brown;
+}
+
+.heading{
+    margin: 0 auto;
+    max-width: 45rem;
+    text-align: center;
+}
+.heading h2{
+    font-size: 3rem;
+    font-weight: 600;
+   
+}
+
+.heading p{
+    color: #4e4e34;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/*showcase*/
+.showcase_image{
+    width: 30rem;
+    height: auto;
+}
+
+.showcase_inner .grid-2{
+    gap: 2rem;
+}
+
+.showcase_image img{
+    width: 100%;
+}
+
+.showcase_text h2{
+    font-size: 2.9rem;
+    font-weight: 500;
+    color: #08ca59;
+
+}
+
+p{
+    font-size: 1.1rem;
+    color: #e6e1e1;
+    margin: 2.5rem 0;
+}
+
+/*services*/
+
+.services_card{
+    margin-top: 3rem;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+}
+
+.services .grid-2,
+.choose .grid-2,
+.stories_inner-content.grid-2{
+    gap: 2rem;
+}
+
+.services_card .bx-briefcase-alt-2,
+.services_card .bx-store-alt
+{
+    font-size: 4rem;
+    color: #08ca59;
+    
+}
+
+.services-paragraph{
+    color: #57574f;       
+}
+
+.circle{
+    border: 1px solid #71d98b;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #71d98b;
+    margin-right: 1.5rem;
+}
+
+.text{
+    margin: 2rem 0;
+}
+
+.text h3{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.text p{
+    font-size: 1.2rem;
+}
+
+/*choose*/
+.choose{
+   padding: 5rem 0;
+   background-color: #e2d0e2;
+}
+
+.choose img{
+    border-radius: 3rem;
+    width: 100%;
+    height: 25rem;
+    
+}
+
+.choose_text-content h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.choose .flex{
+    justify-content: space-between;
+}
+
+.text_p{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #b4b4a7;
+    padding-bottom: 1rem;
+}
+
+.text_p h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.text_p i{
+    font-size: 1.2rem;
+    color: #71d98b;
+    
+}
+
+/*stories*/
+.stories .headings{
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+
+.headings h2{
+    font-size: 3rem;
+    font-weight: 600;
+   
+}
+
+.headings p{
+    color: #4e4e34;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.stories h4{
+    font-size: 1rem;
+    margin: 2rem 0;
+    font-weight: 300;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg{
+    padding: 3rem 2rem ;
+    background-color: #a9e497;
+    border-radius: 3rem;
+}
+
+.bg img{
+    border-radius: 2rem;
+    
+}
+
+.stories_inner-content{
+    margin-top: 3rem;
+}
+
+.bg h2{
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+/*step*/
+.step_inner{
+    background-color: #103928;
+    padding: 5rem 0;
+    border-radius: 2rem;
+}
+
+.step h3{
+    font-size: 2.5rem;
+    color: #08ca59;
+    font-weight: 400;
+}
+
+.step p{
+    margin: 3rem 0;
+}
+
+.step_inner.flex{
+    flex-direction: column;
+}
+
+@media screen and (max-width:600px) {
+    .header{
+        padding: 1rem 2rem;
+    }
+    .nav{
+        display: none;
+        
+    }
+
+    .logo{
+        justify-self: center;
+        color: #fff;
+    }
+
+    /* body{
+        background-color: rgb(168, 167, 167);
+    } */
+
+    .services_inner{
+        padding: 0 2rem;
+    }
+
+    .services .grid-2{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,34 @@
+.flex{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section{
+    margin: 6rem 0;
+}
+
+
+.btn{
+    background-color: #08ca59;
+    color: #0f0c0c;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+}
+.showcase{
+   background-color: #103928;
+    min-height: 80vh;
+    margin-top: 0;
+    padding: 5rem 0;
+}
